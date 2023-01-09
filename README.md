@@ -13,7 +13,7 @@ et est hébergé sur Github Pages.
 Pour lancer le site en local après avoir cloné le dépôt git, vous aurez besoin de Ruby et de [Jekyll](https://jekyllrb.com/) (toutes les instructions d'installation sont dans ce lien)
 
 ```powershell
-git clone https://github.com/yvzn/yvzn.github.io.git
+git clone https://github.com/yvzn/blog.git
 bundle exec jekyll serve
 ```
 
@@ -27,7 +27,7 @@ Les textes et articles sont distribués sous licence
 
 Les composants logiciels sont distribués sous licence Apache (voir le fichier LICENSE)
 
-L'ensemble du code source est disponible sur [Github](https://github.com/yvzn/yvzn.github.io).
+L'ensemble du code source est disponible sur [Github](https://github.com/yvzn/blog).
 
 ## Avec Docker
 

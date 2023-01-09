@@ -40,7 +40,8 @@ exclude:
   - CONTENT-LICENSE
   - Gemfile
   - Gemfile.lock
-  
+  - azure-pipelines.yml
+
 minima:
   date_format: "%-d %b %Y"
 
