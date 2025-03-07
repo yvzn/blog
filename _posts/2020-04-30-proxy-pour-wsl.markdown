@@ -80,7 +80,7 @@ sudo vi /etc/apt/apt.conf
 Puis ajouter&nbsp;:
 
 ```
-Acquire::http::Proxy "http:// ...user... : ...mot_de_passe... @proxy.acme.local:8080"
+Acquire::http::Proxy "http:// ...user... : ...mot_de_passe... @proxy.acme.local:8080";
 ```
 
 # Conclusion
