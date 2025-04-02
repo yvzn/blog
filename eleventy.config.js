@@ -1,5 +1,6 @@
-export default function(eleventyConfig) {
-	eleventyConfig.addPassthroughCopy('./styles/')
+export default function (eleventyConfig) {
+	eleventyConfig.addPassthroughCopy({ './public/': '.' });
+
 	eleventyConfig.addWatchTarget('./styles/')
 }
 
