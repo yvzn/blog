@@ -1,6 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	/* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
+	--color-skyblue: #8ecae6;
+	--color-skyblue-700: #257EA7;
+	--color-skyblue-800: #217197;
+	--color-skyblue-900: #1A5875;
+	--color-bluegreen: #219ebc;
+	--color-bluegreen-100: #eef9fc;
+	--color-bluegreen-800: #18748B;
+	--color-bluegreen-900: #0F4857;
+	--color-prussianblue: #023047;
+	--color-selectiveyellow: #ffb703;
+	--color-selectiveyellow-300: #FFD15C;
+	--color-utorange: #FB8500;
+}
 
 @view-transition {
   navigation: auto;
