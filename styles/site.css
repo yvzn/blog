@@ -5,11 +5,13 @@
 @theme {
 	/* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
 	--color-skyblue: #8ecae6;
+	--color-skyblue-200: #BCE0F0;
 	--color-skyblue-700: #257EA7;
 	--color-skyblue-800: #217197;
 	--color-skyblue-900: #1A5875;
 	--color-bluegreen: #219ebc;
 	--color-bluegreen-100: #eef9fc;
+	--color-bluegreen-200: #CBEDF6;
 	--color-bluegreen-800: #18748B;
 	--color-bluegreen-900: #0F4857;
 	--color-prussianblue: #023047;

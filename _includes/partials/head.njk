@@ -1,9 +1,17 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Blog - Human learning(s)</title>
-<meta
-	name="description"
-	content="Blog articles and code snippets about software development, accessibility, and continuous learning"
-/>
+
+<title>Blog - {{ blog.title }}</title>
+<meta name="description" content="{{ blog.title }} | {{ blog.description }}" />
+<meta name="author" content="{{ blog.author }}" />
+
+<meta property="og:title" content="{{ blog.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.ludeo.net" />
+<!-- <meta property="og:image" content="" /> -->
+<meta property="og:description" content="{{ blog.title }} | {{ blog.description }}" />
+<meta property="og:locale" content="{{ blog.locale }}" />
+
 <link rel="stylesheet" href="{{ '/site.css' | url }}" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="canonical" href="https://blog.ludeo.net" />

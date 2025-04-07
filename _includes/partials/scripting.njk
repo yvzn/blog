@@ -12,8 +12,12 @@
 
 	darkModeToggle.addEventListener('click', toggleDarkMode);
 
-	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-		toggleDarkMode();
+	if (window.matchMedia) {
+		const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+		if (darkModeMediaQuery.matches) {
+			toggleDarkMode();
+		}
+		darkModeMediaQuery.addEventListener('change', toggleDarkMode);
 	}
 
 	const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -26,4 +30,11 @@
 	mobileMenu.addEventListener('click', () => {
 		mobileMenu.classList.toggle('hidden');
 	});
+
+	if (window.matchMedia) {
+		const mdBreakpointMediaQuery = window.matchMedia('(width >= 48rem)');
+		mdBreakpointMediaQuery.addEventListener('change', () => {
+			mobileMenu.classList.add('hidden');
+		});
+	}
 </script>

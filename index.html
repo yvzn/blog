@@ -5,78 +5,87 @@ layout: default.njk
 <!-- Hero Section -->
 <section id="hero" class="py-24 lg:py-48 px-4 bg-skyblue dark:bg-skyblue-900">
 	<div class="container mx-auto md:w-2/3">
-	<h1 class="text-4xl font-semibold mb-6">Human learning(s)</h1>
-	<p class="text-xl mb-8">
-		A collection of thoughts, experiences, and lessons learned on my journey through software development,
-		accessibility, and continuous learning. Here, I share practical insights, code snippets, and best practices
-		that I've gathered along the way.
-	</p>
-	<a href="#featured" class="px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-lg">
-		Read Latest Articles
-	</a>
+		<h1 class="text-4xl font-semibold mb-6">Human learning(s)</h1>
+		<p class="text-xl mb-8">
+			{{ blog.tagline }}
+		</p>
+		<a href="#articles"
+			class="px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-sm">
+			Lire les articles
+		</a>
+		<!-- secondary link to code section -->
+		<a href="#code"
+			class="ml-4 px-6 py-3 border-1 border-prussianblue hover:bg-skyblue-200 dark:text-bluegreen-100 dark:border-bluegreen-100 dark:hover:bg-skyblue-800 transition-colors text-prussianblue rounded-sm">
+			Extraits de code
+		</a>
 	</div>
 </section>
 
 <!-- Featured Blog Articles Section -->
-<section id="featured" class="py-24 px-4 bg-white dark:bg-bluegreen-800">
+<section id="articles" class="py-24 px-4 bg-white dark:bg-bluegreen-800">
 	<div class="container mx-auto">
-	<h2 class="text-4xl font-semibold text-center mb-12">Featured Articles</h2>
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-		<!-- Article 1 -->
-		<article class="bg-skyblue dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h2 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Building Accessible Web Applications</a>
-		</h2>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			Learn how to create web applications that are accessible to everyone, including keyboard navigation, ARIA labels, and semantic HTML.
-		</p>
-		<a href="#" class="text-bluegreen-800 dark:text-selectiveyellow hover:underline">Read more →</a>
-		</article>
+		<h2 class="text-4xl font-semibold text-center mb-12">Featured Articles</h2>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<!-- Article 1 -->
+			<article class="bg-skyblue dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h2 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Building Accessible Web
+						Applications</a>
+				</h2>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					Learn how to create web applications that are accessible to everyone, including keyboard navigation,
+					ARIA labels, and semantic HTML.
+				</p>
+				<a href="#" class="text-bluegreen-800 dark:text-selectiveyellow hover:underline">Read more →</a>
+			</article>
 
-		<!-- Article 2 -->
-		<article class="bg-skyblue dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h2 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Mastering Azure DevOps</a>
-		</h2>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			A comprehensive guide to setting up CI/CD pipelines, managing releases, and implementing best practices in Azure DevOps.
-		</p>
-		<a href="#" class="text-bluegreen-800 dark:text-selectiveyellow hover:underline">Read more →</a>
-		</article>
+			<!-- Article 2 -->
+			<article class="bg-skyblue dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h2 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Mastering Azure DevOps</a>
+				</h2>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					A comprehensive guide to setting up CI/CD pipelines, managing releases, and implementing best
+					practices in Azure DevOps.
+				</p>
+				<a href="#" class="text-bluegreen-800 dark:text-selectiveyellow hover:underline">Read more →</a>
+			</article>
 
-		<!-- Article 3 -->
-		<article class="bg-skyblue dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h2 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">React Performance Tips</a>
-		</h2>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			Discover practical techniques to optimize your React applications, from code splitting to memoization.
-		</p>
-		<a href="#" class="text-bluegreen-800 dark:text-selectiveyellow hover:underline">Read more →</a>
-		</article>
-	</div>
-	<div class="text-center mt-12">
-		<a href="#" class="px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-lg">
-		View All Articles
-		</a>
-	</div>
+			<!-- Article 3 -->
+			<article class="bg-skyblue dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h2 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">React Performance Tips</a>
+				</h2>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					Discover practical techniques to optimize your React applications, from code splitting to
+					memoization.
+				</p>
+				<a href="#" class="text-bluegreen-800 dark:text-selectiveyellow hover:underline">Read more →</a>
+			</article>
+		</div>
+		<div class="text-center mt-12">
+			<a href="#"
+				class="px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-sm">
+				View All Articles
+			</a>
+		</div>
 	</div>
 </section>
 
 <!-- Code Snippets Section -->
-<section class="py-24 px-4 bg-skyblue dark:bg-skyblue-900">
+<section id="code" class="py-24 px-4 bg-skyblue dark:bg-skyblue-900">
 	<div class="container mx-auto">
-	<h2 class="text-4xl font-semibold text-center mb-12">Featured Code Snippets</h2>
-	<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-		<!-- Snippet 1 -->
-		<article class="bg-white dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h3 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Custom React Hook for Dark Mode</a>
-		</h3>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			A reusable React hook that handles dark mode toggle with local storage persistence.
-		</p>
-		<pre class="bg-prussianblue text-white p-4 rounded-lg overflow-x-auto"><code>const useDarkMode = () => {
+		<h2 class="text-4xl font-semibold text-center mb-12">Featured Code Snippets</h2>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+			<!-- Snippet 1 -->
+			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h3 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Custom React Hook for Dark Mode</a>
+				</h3>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					A reusable React hook that handles dark mode toggle with local storage persistence.
+				</p>
+				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>const useDarkMode = () => {
 const [isDark, setIsDark] = useState(
 localStorage.getItem('darkMode') === 'true'
 );
@@ -88,17 +97,17 @@ document.body.classList.toggle('dark', isDark);
 
 return [isDark, setIsDark];
 };</code></pre>
-		</article>
+			</article>
 
-		<!-- Snippet 2 -->
-		<article class="bg-white dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h3 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Azure Function Timer Trigger</a>
-		</h3>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			A simple Azure Function that runs on a schedule using a timer trigger.
-		</p>
-		<pre class="bg-prussianblue text-white p-4 rounded-lg overflow-x-auto"><code>[FunctionName("DailyCleanup")]
+			<!-- Snippet 2 -->
+			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h3 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Azure Function Timer Trigger</a>
+				</h3>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					A simple Azure Function that runs on a schedule using a timer trigger.
+				</p>
+				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>[FunctionName("DailyCleanup")]
 public static async Task RunAsync(
 [TimerTrigger("0 0 0 * * *")] TimerInfo timer,
 ILogger log)
@@ -107,32 +116,32 @@ log.LogInformation("Daily cleanup started");
 await CleanupOldData();
 log.LogInformation("Daily cleanup completed");
 }</code></pre>
-		</article>
+			</article>
 
-		<!-- Snippet 3 -->
-		<article class="bg-white dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h3 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Tailwind CSS Grid Layout</a>
-		</h3>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			A responsive grid layout using Tailwind CSS classes.
-		</p>
-		<pre class="bg-prussianblue text-white p-4 rounded-lg overflow-x-auto"><code>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"&gt;
+			<!-- Snippet 3 -->
+			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h3 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Tailwind CSS Grid Layout</a>
+				</h3>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					A responsive grid layout using Tailwind CSS classes.
+				</p>
+				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"&gt;
 &lt;div class="p-4 bg-white rounded shadow"&gt;Item 1&lt;/div&gt;
 &lt;div class="p-4 bg-white rounded shadow"&gt;Item 2&lt;/div&gt;
 &lt;div class="p-4 bg-white rounded shadow"&gt;Item 3&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-		</article>
+			</article>
 
-		<!-- Snippet 4 -->
-		<article class="bg-white dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h3 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">TypeScript Generic Function</a>
-		</h3>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			A TypeScript function using generics for type-safe data handling.
-		</p>
-		<pre class="bg-prussianblue text-white p-4 rounded-lg overflow-x-auto"><code>function filterArray&lt;T&gt;(
+			<!-- Snippet 4 -->
+			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h3 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">TypeScript Generic Function</a>
+				</h3>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					A TypeScript function using generics for type-safe data handling.
+				</p>
+				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>function filterArray&lt;T&gt;(
 array: T[],
 predicate: (item: T) => boolean
 ): T[] {
@@ -144,17 +153,17 @@ const evenNumbers = filterArray(
 numbers,
 (n) => n % 2 === 0
 );</code></pre>
-		</article>
+			</article>
 
-		<!-- Snippet 5 -->
-		<article class="bg-white dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h3 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">CSS Animation Keyframes</a>
-		</h3>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			A smooth fade-in animation using CSS keyframes.
-		</p>
-		<pre class="bg-prussianblue text-white p-4 rounded-lg overflow-x-auto"><code>@keyframes fadeIn {
+			<!-- Snippet 5 -->
+			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h3 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">CSS Animation Keyframes</a>
+				</h3>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					A smooth fade-in animation using CSS keyframes.
+				</p>
+				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>@keyframes fadeIn {
 from {
 opacity: 0;
 transform: translateY(20px);
@@ -168,17 +177,17 @@ transform: translateY(0);
 .animate-fade-in {
 animation: fadeIn 0.5s ease-out forwards;
 }</code></pre>
-		</article>
+			</article>
 
-		<!-- Snippet 6 -->
-		<article class="bg-white dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h3 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">React Context Provider</a>
-		</h3>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			A React context provider for managing global state.
-		</p>
-		<pre class="bg-prussianblue text-white p-4 rounded-lg overflow-x-auto"><code>const ThemeContext = createContext();
+			<!-- Snippet 6 -->
+			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h3 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">React Context Provider</a>
+				</h3>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					A React context provider for managing global state.
+				</p>
+				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
 const [theme, setTheme] = useState('light');
@@ -189,17 +198,17 @@ return (
 &lt;/ThemeContext.Provider&gt;
 );
 }</code></pre>
-		</article>
+			</article>
 
-		<!-- Snippet 7 -->
-		<article class="bg-white dark:bg-skyblue-800 rounded-lg shadow-md p-6">
-		<h3 class="text-2xl font-semibold mb-4">
-			<a href="#" class="hover:border-b-4 border-b-selectiveyellow">.NET LINQ Query</a>
-		</h3>
-		<p class="text-gray-600 dark:text-gray-300 mb-4">
-			A LINQ query for filtering and grouping data.
-		</p>
-		<pre class="bg-prussianblue text-white p-4 rounded-lg overflow-x-auto"><code>var result = await dbContext.Orders
+			<!-- Snippet 7 -->
+			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
+				<h3 class="text-2xl font-semibold mb-4">
+					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">.NET LINQ Query</a>
+				</h3>
+				<p class="text-gray-600 dark:text-gray-300 mb-4">
+					A LINQ query for filtering and grouping data.
+				</p>
+				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>var result = await dbContext.Orders
 .Where(o => o.Status == OrderStatus.Pending)
 .GroupBy(o => o.CustomerId)
 .Select(g => new {
@@ -208,12 +217,13 @@ return (
 	TotalAmount = g.Sum(o => o.Amount)
 })
 .ToListAsync();</code></pre>
-		</article>
-	</div>
-	<div class="text-center mt-12">
-		<a href="#" class="px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-lg">
-		View All Code Snippets
-		</a>
-	</div>
+			</article>
+		</div>
+		<div class="text-center mt-12">
+			<a href="#"
+				class="px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-sm">
+				View All Code Snippets
+			</a>
+		</div>
 	</div>
 </section>
