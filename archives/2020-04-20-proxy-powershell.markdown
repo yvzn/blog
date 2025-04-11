@@ -6,6 +6,7 @@ layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 series: authenticated-proxy
+tags: code
 ---
 
 <acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>

@@ -25,42 +25,19 @@ layout: default.njk
 	<div class="container mx-auto md:w-2/3">
 		<h2 class="text-3xl font-semibold text-center mb-12">Articles</h2>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-			<!-- Article 1 -->
+			{%- for article in collections.featuredArticles -%}
 			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
 				<h2 class="text-2xl font-semibold mb-4">
-					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Building Accessible Web
-						Applications</a>
+					<a href="{{article.url}}" class="hover:border-b-4 border-b-selectiveyellow">{{ article.data.title
+						}}</a>
 				</h2>
-				<p class="text-gray-600 dark:text-gray-50 mb-4">
-					Learn how to create web applications that are accessible to everyone, including keyboard navigation,
-					ARIA labels, and semantic HTML.
-				</p>
-				<a href="#" class="text-bluegreen-800 dark:text-white hover:border-b-2 border-b-selectiveyellow">Read more →</a>
+				<div class="text-gray-600 dark:text-gray-50 mb-4">
+					{% excerpt article %}
+				</div>
+				<a href="{{article.url}}"
+					class="text-bluegreen-800 dark:text-white underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">Lire la suite&puncsp;&rarr;</a>
 			</article>
-
-			<!-- Article 2 -->
-			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
-				<h2 class="text-2xl font-semibold mb-4">
-					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Mastering Azure DevOps</a>
-				</h2>
-				<p class="text-gray-600 dark:text-gray-50 mb-4">
-					A comprehensive guide to setting up CI/CD pipelines, managing releases, and implementing best
-					practices in Azure DevOps.
-				</p>
-				<a href="#" class="text-bluegreen-800 dark:text-white hover:border-b-2 border-b-selectiveyellow">Read more →</a>
-			</article>
-
-			<!-- Article 3 -->
-			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-6">
-				<h2 class="text-2xl font-semibold mb-4">
-					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">React Performance Tips</a>
-				</h2>
-				<p class="text-gray-600 dark:text-gray-50 mb-4">
-					Discover practical techniques to optimize your React applications, from code splitting to
-					memoization.
-				</p>
-				<a href="#" class="text-bluegreen-800 dark:text-white hover:border-b-2 border-b-selectiveyellow">Read more →</a>
-			</article>
+			{%- endfor -%}
 		</div>
 		<div class="text-center mt-12">
 			<a href="/articles"

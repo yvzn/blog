@@ -5,6 +5,7 @@ date: 2020-08-20T00:00+01:00
 layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
+tags: article
 ---
 
 <acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
