@@ -2,7 +2,6 @@
 permalink: /2020/06/20/pourquoi-migrer-sur-le-cloud.html
 title: "Migrer sur le cloud"
 date: 2020-06-21T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 tags: article

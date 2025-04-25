@@ -2,7 +2,6 @@
 permalink: /2020/04/29/proxy-pour-wsl.html
 title: "Configurer un proxy pour WSL"
 date: 2020-04-30T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 series: authenticated-proxy

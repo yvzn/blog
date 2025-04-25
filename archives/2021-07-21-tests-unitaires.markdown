@@ -2,7 +2,6 @@
 permalink: /2021/07/20/tests-unitaires.html
 title: "Développer plus rapidement avec des tests unitaires"
 date: 2021-07-21T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

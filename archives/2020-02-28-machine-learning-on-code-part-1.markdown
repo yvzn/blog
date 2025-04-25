@@ -2,7 +2,6 @@
 permalink: /2020/02/27/machine-learning-on-code-part-1.html
 title: "Machine Learning sur du code source (partie 1)"
 date: 2020-02-28T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 series: machine-learning-on-code

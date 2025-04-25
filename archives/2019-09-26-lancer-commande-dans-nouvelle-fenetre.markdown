@@ -2,7 +2,6 @@
 permalink: /2019/09/25/lancer-commande-dans-nouvelle-fenetre.html
 title: "Lancer une commande dans une nouvelle fenêtre avec Powershell"
 date: 2019-09-26T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

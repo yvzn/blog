@@ -2,7 +2,6 @@
 permalink: /2018/07/24/couverture-code-net.html
 title: "Calculer la couverture de code d'un projet .Net"
 date: 2018-07-25T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

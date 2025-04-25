@@ -2,7 +2,6 @@
 permalink: /2018/05/29/liste-donnees-personnelles-rgpd.html
 title: "Liste des données personnelles couvertes par le RGPD"
 date: 2018-05-30T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

@@ -2,7 +2,6 @@
 permalink: /2017/10/25/retour-sur-devoxx-2017.html
 title: "Retour sur Devoxx 2017"
 date: 2017-10-25T00:00Z
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

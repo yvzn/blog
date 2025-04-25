@@ -2,7 +2,6 @@
 permalink: /2021/10/19/mettre-en-production-plus-souvent-part-2.html
 title: "Je rollback sereinement la production"
 date: 2021-10-20T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 series: mettre-en-production

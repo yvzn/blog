@@ -2,7 +2,6 @@
 permalink: /2018/03/16/net-core.html
 title: "Une app .NET Core sur Docker et Kubernetes"
 date: 2018-03-16T00:00Z
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

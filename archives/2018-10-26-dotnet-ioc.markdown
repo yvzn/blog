@@ -2,7 +2,6 @@
 permalink: /2018/09/17/dotnet-ioc.html
 title: "Injection de dépendances dans les Azure Functions"
 date: 2018-09-18T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

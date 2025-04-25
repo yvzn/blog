@@ -2,7 +2,6 @@
 permalink: /2017/11/01/creer-un-fichier-sans-editeur.html
 title: "Créer un fichier sans éditeur"
 date: 2017-11-02T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

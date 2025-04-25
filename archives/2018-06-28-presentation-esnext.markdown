@@ -2,7 +2,6 @@
 permalink: /2018/06/27/presentation-esnext.html
 title: "Les nouveautés ECMAScript (ES6 → ES2018)"
 date: 2018-06-28T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

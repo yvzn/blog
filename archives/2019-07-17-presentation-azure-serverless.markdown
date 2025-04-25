@@ -2,7 +2,6 @@
 permalink: /2019/07/16/presentation-azure-serverless.html
 title: "Azure Serverless: un retour d'expérience"
 date: 2019-07-17T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

@@ -11,6 +11,10 @@ export default function (eleventyConfig) {
 	eleventyConfig.addCollection("featuredArticles", getFeaturedArticles);
 
 	eleventyConfig.addShortcode("excerpt", extractExcerpt);
+
+	eleventyConfig.addFilter("limit", function (array, limit) {
+		return array.slice(0, limit);
+	});
 }
 
 function getFeaturedArticles(collectionsApi) {

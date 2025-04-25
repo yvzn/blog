@@ -1,5 +1,6 @@
 ---
 layout: default.njk
+title: Blog
 ---
 
 <!-- Hero Section -->
@@ -53,83 +54,19 @@ layout: default.njk
 	<div class="container mx-auto md:w-2/3">
 		<h2 class="text-3xl font-semibold text-center mb-12">Extraits de code</h2>
 		<div class="grid grid-cols-1 gap-8">
-			<!-- Snippet 1 -->
+			{% assign snippets = collections.code | limit:4 %}
+			{%- for snippet in snippets -%}
 			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-6">
 				<h3 class="text-2xl font-semibold mb-4">
-					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Custom React Hook for Dark Mode</a>
+					<a href="{{snippet.url}}" class="hover:border-b-4 border-b-selectiveyellow">{{snippet.data.title}}</a>
 				</h3>
-				<p class="text-gray-600 dark:text-gray-50 mb-4">
-					A reusable React hook that handles dark mode toggle with local storage persistence.
-				</p>
-				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>const useDarkMode = () => {
-const [isDark, setIsDark] = useState(
-localStorage.getItem('darkMode') === 'true'
-);
-
-useEffect(() => {
-localStorage.setItem('darkMode', isDark);
-document.body.classList.toggle('dark', isDark);
-}, [isDark]);
-
-return [isDark, setIsDark];
-};</code></pre>
+				<div class="text-gray-600 dark:text-gray-50 mb-4">
+					{% excerpt snippet %}
+				</div>
+				<a href="{{snippet.url}}"
+					class="text-bluegreen-800 dark:text-white underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">Lire la suite&puncsp;&rarr;</a>
 			</article>
-
-			<!-- Snippet 2 -->
-			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-6">
-				<h3 class="text-2xl font-semibold mb-4">
-					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Azure Function Timer Trigger</a>
-				</h3>
-				<p class="text-gray-600 dark:text-gray-50 mb-4">
-					A simple Azure Function that runs on a schedule using a timer trigger.
-				</p>
-				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>[FunctionName("DailyCleanup")]
-public static async Task RunAsync(
-[TimerTrigger("0 0 0 * * *")] TimerInfo timer,
-ILogger log)
-{
-log.LogInformation("Daily cleanup started");
-await CleanupOldData();
-log.LogInformation("Daily cleanup completed");
-}</code></pre>
-			</article>
-
-			<!-- Snippet 3 -->
-			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-6">
-				<h3 class="text-2xl font-semibold mb-4">
-					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">Tailwind CSS Grid Layout</a>
-				</h3>
-				<p class="text-gray-600 dark:text-gray-50 mb-4">
-					A responsive grid layout using Tailwind CSS classes.
-				</p>
-				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"&gt;
-&lt;div class="p-4 bg-white rounded shadow"&gt;Item 1&lt;/div&gt;
-&lt;div class="p-4 bg-white rounded shadow"&gt;Item 2&lt;/div&gt;
-&lt;div class="p-4 bg-white rounded shadow"&gt;Item 3&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-			</article>
-
-			<!-- Snippet 4 -->
-			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-6">
-				<h3 class="text-2xl font-semibold mb-4">
-					<a href="#" class="hover:border-b-4 border-b-selectiveyellow">TypeScript Generic Function</a>
-				</h3>
-				<p class="text-gray-600 dark:text-gray-50 mb-4">
-					A TypeScript function using generics for type-safe data handling.
-				</p>
-				<pre class="bg-prussianblue text-white p-4 rounded-sm overflow-x-auto"><code>function filterArray&lt;T&gt;(
-array: T[],
-predicate: (item: T) => boolean
-): T[] {
-return array.filter(predicate);
-}
-
-const numbers = [1, 2, 3, 4, 5];
-const evenNumbers = filterArray(
-numbers,
-(n) => n % 2 === 0
-);</code></pre>
-			</article>
+			{%- endfor -%}
 		</div>
 		<div class="text-center mt-12">
 			<a href="/code"

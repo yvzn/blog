@@ -2,7 +2,6 @@
 permalink: /2019/10/27/spring-boot-azure.html
 title: "Exécuter une application Spring Boot sur Azure"
 date: 2019-10-28T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 series: spring-boot-azure

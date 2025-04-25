@@ -2,7 +2,6 @@
 permalink: /2017/11/15/devfest-nantes-2017.html
 title: "Devfest Nantes 2017"
 date: 2017-11-15T00:00Z
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

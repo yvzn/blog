@@ -2,7 +2,6 @@
 permalink: /2017/10/24/human-learnings.html
 title: "Human Learnings"
 date: 2017-10-25T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

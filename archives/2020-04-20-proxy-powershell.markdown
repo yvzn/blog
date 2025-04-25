@@ -2,7 +2,6 @@
 permalink: /2020/04/19/proxy-powershell.html
 title: "Configurer un proxy pour Powershell"
 date: 2020-04-20T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 series: authenticated-proxy

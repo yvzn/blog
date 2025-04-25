@@ -2,7 +2,6 @@
 permalink: /2021/02/07/compatibilite-descendante.html
 title: "Compatibilité descendante"
 date: 2021-02-08T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

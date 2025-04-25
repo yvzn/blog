@@ -2,7 +2,6 @@
 permalink: /2018/08/08/machine-learning.html
 title: "Mooc Machine Learning par Andrew Ng"
 date: 2018-08-09T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---

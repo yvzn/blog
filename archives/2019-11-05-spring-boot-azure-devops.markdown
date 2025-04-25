@@ -2,7 +2,6 @@
 permalink: /2020/01/01/spring-boot-azure-devops.html
 title: "Déployer une application Spring Boot avec Azure Devops"
 date: 2020-01-02T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 series: spring-boot-azure

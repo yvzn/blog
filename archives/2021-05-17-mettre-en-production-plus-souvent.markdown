@@ -2,7 +2,6 @@
 permalink: /2021/04/27/mettre-en-production-plus-souvent.html
 title: "Je mets en production plus souvent"
 date: 2021-04-28T00:00+01:00
-layout: post
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 series: mettre-en-production
