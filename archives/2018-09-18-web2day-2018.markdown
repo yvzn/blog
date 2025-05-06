@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Le web2day ce sont des conférences techniques, mais ce sont surtout des présentations sur le design, l'entrepreunariat et aussi des sujets de découverte sur le numérique de manière plus générale.
+ Le web2day ce sont des conférences techniques, mais ce sont surtout des présentations sur le design, l'entrepreunariat et aussi des sujets de découverte sur le numérique de manière plus générale.
 
 Ce serait tellement long de résumer l'ensemble des sujets abordés. Pour cette année, j'ai choisi d'orienter mon compte-rendu autour du thème "Quelles compétences pour travailler dans un monde en constante évolution".
 

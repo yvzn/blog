@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Voici les conférences que j'ai vues (et appréciées) lors de cette édition. Celles que j'ai préféré&nbsp;: <a href="https://youtu.be/96iIQuhTzsc">Historique d'Android</a> et <a href="https://youtu.be/T6YJlaY0Dpw">Documentation as code</a>, des conférences pas hyper techniques mais bien présentées et avec du contenu. Le reste ci-après.
+ Voici les conférences que j'ai vues (et appréciées) lors de cette édition. Celles que j'ai préféré&nbsp;: <a href="https://youtu.be/96iIQuhTzsc">Historique d'Android</a> et <a href="https://youtu.be/T6YJlaY0Dpw">Documentation as code</a>, des conférences pas hyper techniques mais bien présentées et avec du contenu. Le reste ci-après.
 
 <!--more-->
 

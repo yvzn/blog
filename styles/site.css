@@ -75,3 +75,11 @@
 @view-transition {
 	navigation: auto;
 }
+
+.post h1 {
+	 @apply text-2xl font-semibold mb-4 pt-12;
+}
+
+.post p {
+	@apply text-base/7 mb-4;
+}

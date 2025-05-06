@@ -8,7 +8,7 @@ series: authenticated-proxy
 tags: code
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
+
 Pour se connecter à internet dans le sous-système Linux pour Windows, nous pouvons configurer le proxy http à utiliser à l'aide des variables d'environnement `http_proxy` et `https_proxy` et grâce à la directive `Acquire::http::Proxy` dans `apt.conf`.
 
 <!--more-->

@@ -11,10 +11,12 @@ export default function (eleventyConfig) {
 	eleventyConfig.addCollection("featuredArticles", getFeaturedArticles);
 
 	eleventyConfig.addShortcode("excerpt", extractExcerpt);
+	eleventyConfig.addShortcode("details", extractDetails);
 
 	eleventyConfig.addFilter("limit", function (array, limit) {
 		return array.slice(0, limit);
 	});
+	eleventyConfig.addFilter("stripMarkup", stripMarkup);
 }
 
 function getFeaturedArticles(collectionsApi) {
@@ -28,10 +30,36 @@ function getFeaturedArticles(collectionsApi) {
 	return Array.from(randomIndices).toSorted().map((index) => sortedArticles[index]);
 }
 
-function extractExcerpt(article) {
-	const endPosition = article.templateContent.indexOf("<!--more-->");
+function extractExcerpt(templateContent) {
+	const endPosition = templateContent.indexOf("<!--more-->");
 	if (endPosition === -1) {
-		return article.templateContent.trim();
+		return templateContent.trim();
 	}
-	return article.templateContent.substring(0, endPosition).trim();
+	return templateContent.substring(0, endPosition).trim();
+}
+
+function extractDetails(templateContent) {
+	const startPosition = templateContent.indexOf("<!--more-->");
+	if (startPosition === -1) {
+		return templateContent.trim();
+	}
+	return templateContent.substring(startPosition).trim();
+}
+
+function stripMarkup(content) {
+	if (typeof content !== "string") return content;
+	if (content.length < 1) return content;
+
+	let result = content;
+	// Remove HTML tags
+	result = result.replace(/<[^>]+>/g, "");
+	// Replace markdown links with plain text
+	result = result.replace(/\[([^\]]+)\]\([^\)]+\)/g, "$1");
+	// Remove line breaks
+	result = result.replace(/(\r\n|\n|\r)/gm, " ");
+	// Remove extra spaces
+	result = result.replace(/\s+/g, " ");
+	result = result.trim();
+
+	return result;
 }

@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 series: machine-learning-on-code
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Lancer des algorithmes de machine learning sur son code source permet d'extraire des informations sur la structure des projets et d'améliorer l'outillage de développement. Ce sont les méthodes inspirées du traitement automatique du langage naturel qui semblent donner les premiers résultats. Des briques open-source comme [Gitbase](https://github.com/src-d/gitbase) ou [Babelfish](https://doc.bblf.sh/) permettent de faciliter les étapes de collection et d'analyse de la donnée. Dans ce premier article, je décris l'approche utilisée et les étapes à réaliser.
+ Lancer des algorithmes de machine learning sur son code source permet d'extraire des informations sur la structure des projets et d'améliorer l'outillage de développement. Ce sont les méthodes inspirées du traitement automatique du langage naturel qui semblent donner les premiers résultats. Des briques open-source comme [Gitbase](https://github.com/src-d/gitbase) ou [Babelfish](https://doc.bblf.sh/) permettent de faciliter les étapes de collection et d'analyse de la donnée. Dans ce premier article, je décris l'approche utilisée et les étapes à réaliser.
 
 <!--more-->
 

@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 tags: article
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
+
 Tabber, mon éditeur de tablature de guitares (pour Windows) a 20 ans. Il fonctionne encore, sous Windows 10 - et il compile encore, enfin presque (avec un vieil IDE). Pour fêter cet honorable anniversaire, je l'ai à nouveau [mis en ligne](http://yvzn.github.io/tabber) et publié sur [GitHub](https://github.com/yvzn/tabber).
 
 <!--more-->

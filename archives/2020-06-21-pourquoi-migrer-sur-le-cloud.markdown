@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 tags: article
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
+
 Quels arguments évoquer avec son architecte préféré ou sa DSI, en parlant d'une éventuelle migration vers le cloud ? Les avantages sont la haute disponibilité de l'infrastructure, sa maintenance simplifiée et l'elasticité. Mais il ne faut pas perdre de vue que ces infrastructures sont publiques et que leur coût final peut être difficile à évaluer.
 
 <!--more-->

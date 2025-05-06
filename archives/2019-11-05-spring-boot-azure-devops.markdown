@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 series: spring-boot-azure
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> La plateforme
+ La plateforme
 Azure Devops permet de constuire et déployer automatiquement, en continu, une application Java
 Spring Boot dans le cloud Microsoft. Un fichier `yaml` versionné avec le code source
 permet de configurer comment un tel déploiement peut être réalisé. Dans ce second article,

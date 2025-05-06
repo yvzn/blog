@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 series: machine-learning-on-code
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Après un second article où je présente les étapes de collecte et de première analyse de la donnée présentés dans codelab, dans cette derniere partie je décris la mise en oeuvre du modèle d'apprentissage non supervisé et la manière dont on peut l'évaluer et le présenter.
+ Après un second article où je présente les étapes de collecte et de première analyse de la donnée présentés dans codelab, dans cette derniere partie je décris la mise en oeuvre du modèle d'apprentissage non supervisé et la manière dont on peut l'évaluer et le présenter.
 
 <!--more-->
 

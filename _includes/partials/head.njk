@@ -2,14 +2,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>{{ title }} - {{ blog.title }}</title>
-<meta name="description" content="{{ description or blog.description }}" />
+<meta name="description" content="{{ (description or blog.description) | stripMarkup | safe }}" />
 <meta name="author" content="{{ blog.author }}" />
 
 <meta property="og:title" content="{{ blog.title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.ludeo.net" />
 <!-- <meta property="og:image" content="" /> -->
-<meta property="og:description" content="{{ description or blog.description }}" />
+<meta property="og:description" content="{{ (description or blog.description) | stripMarkup | safe }}" />
 <meta property="og:locale" content="{{ blog.locale }}" />
 
 <link rel="stylesheet" href="{{ '/site.css' | url }}" />

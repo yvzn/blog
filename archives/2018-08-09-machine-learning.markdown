@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Je viens de terminer le Mooc "[Machine Learning](https://fr.coursera.org/learn/machine-learning)" enseigné par Andrew Ng sur Coursera. Ce cours va au delà des traditionnelles initiations au machine learning, en expliquant de manière plus formelle quelques uns des algorithmes existants. Il enseigne surtout une vraie méthodologie, dont les principes sont appliquables à un plus grand nombre de projets, permettant de choisir, paramétrer, évaluer et généraliser des modèles et leurs prédictions.
+ Je viens de terminer le Mooc "[Machine Learning](https://fr.coursera.org/learn/machine-learning)" enseigné par Andrew Ng sur Coursera. Ce cours va au delà des traditionnelles initiations au machine learning, en expliquant de manière plus formelle quelques uns des algorithmes existants. Il enseigne surtout une vraie méthodologie, dont les principes sont appliquables à un plus grand nombre de projets, permettant de choisir, paramétrer, évaluer et généraliser des modèles et leurs prédictions.
 
 <!--more-->
 

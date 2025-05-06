@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Cette présentation vidéo
+ Cette présentation vidéo
 reprend les principales nouveautés d'ECMAScript, depuis Javascript 1.5 jusqu'à ES2018,
 avec des exemples concrets et des cas d'utilisations possibles.
 

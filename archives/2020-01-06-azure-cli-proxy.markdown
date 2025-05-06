@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 series: authenticated-proxy
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
+
 Pour se connecter à Azure via la ligne de commande Windows,
 nous pouvons si nécessaire définir le proxy http à utiliser via les variables
 d'environnement `HTTP_PROXY` et `HTTPS_PROXY`.

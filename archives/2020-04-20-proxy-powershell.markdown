@@ -8,7 +8,7 @@ series: authenticated-proxy
 tags: code
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
+
 La plupart des commandes Powershell comme <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest">`Invoke-WebRequest`</a> ou <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-restmethod">`Invoke-RestMethod`</a> acceptent les paramètres `-Proxy` et `-ProxyUseDefaultCredentials` pour configurer le proxy http à utiliser lors des appels réseau.
 
 <!--more-->

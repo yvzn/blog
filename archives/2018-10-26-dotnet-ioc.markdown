@@ -8,7 +8,7 @@ license: CC-BY-SA-4.0
 
 *Update*: Les Azure Functions supportent désormais nativement l'[injection de dépendances](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection), grâce à un mécanisme inspiré du `Startup` de .Net Core. Cet article reste néanmoins valide pour les autres cas d'utilisation. */Update*
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> La philosophie fondamentalement statique et procédurale des Azure Functions fait qu'il peut être contre-intuitif d'utiliser des concepts avancés de la programmation objet, tels que l'injection de dépendances.
+ La philosophie fondamentalement statique et procédurale des Azure Functions fait qu'il peut être contre-intuitif d'utiliser des concepts avancés de la programmation objet, tels que l'injection de dépendances.
 
 Cependant plusieurs cas d'utilisation peuvent justifier le recours à ces concepts, pour simplifier l'écriture, les tests et la maintenance.
 

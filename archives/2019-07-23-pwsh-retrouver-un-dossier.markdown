@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> `Get-ChildItem -Recurse`
+ `Get-ChildItem -Recurse`
 permet de retrouver récursivement le chemin vers un fichier
 ou un répertoire dans Powershell. On peut l'associer à
 d'autres commandes afin d'exécuter des traitements sur

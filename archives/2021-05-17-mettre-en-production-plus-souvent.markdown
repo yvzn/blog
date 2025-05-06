@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 series: mettre-en-production
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Pour déployer en production de façon plus sereine, la meilleure technique reste de répéter régulièrement l'exercice, encore et encore, jusqu'à ce qu'il devienne naturel, pour chaque membre de l'équipe.
+ Pour déployer en production de façon plus sereine, la meilleure technique reste de répéter régulièrement l'exercice, encore et encore, jusqu'à ce qu'il devienne naturel, pour chaque membre de l'équipe.
 
 <!--more-->
 

@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 series: spring-boot-azure
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> La ressource
+ La ressource
 de type _Application Web_ (ou _App Service_) permet de déployer rapidement
 une application Java Spring Boot dans le cloud Microsoft. La pile de runtime
 _Linux_ et _Java SE_ est celle qui convient pour ce cas d'utilisation.

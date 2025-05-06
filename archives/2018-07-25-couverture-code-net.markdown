@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Avec les outils [AltCover](https://github.com/SteveGilham/altcover)
+ Avec les outils [AltCover](https://github.com/SteveGilham/altcover)
 et [ReportGenerator](https://danielpalme.github.io/ReportGenerator/)
 il est relativement facile de générer des statistiques au format HTML sur la couverture de
 votre code .Net par les tests unitaires.

@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Adopter une architecture orientée micro-services, a fortiori dans une approche conteneurs ou serverless, c'est accepter que les échanges entre composants ne se passent pas toujours bien – et donc mettre en place les mécanismes adéquats pour éviter une perte d'informations ou fonctionner en mode dégradé.
+ Adopter une architecture orientée micro-services, a fortiori dans une approche conteneurs ou serverless, c'est accepter que les échanges entre composants ne se passent pas toujours bien – et donc mettre en place les mécanismes adéquats pour éviter une perte d'informations ou fonctionner en mode dégradé.
 
 La librairie open-source [Polly](https://github.com/App-vNext/Polly) permet d'adresser un de ces problèmes de communication&nbsp;: la gestion des erreurs lors d'appels HTTP à des services distants. Que faire en cas d'erreur, faut-il rejouer l'appel&nbsp;? Combien de fois&nbsp;? Que retourner à la méthode appelante&nbsp;?
 
@@ -33,7 +33,7 @@ Ce rappel (finalement pas si petit que ça) sert à introduire
 
 # Polly
 
-En intégrant le monde open-source, le framework .NET Core s'est également ouvert à tout un écosystème de solutions tierces qui est venu démultiplier les fonctionnalités offertes. Certaines de ces solutions sont même tellement indispensables qu'elles sont devenues des citoyens de première classe du framework. La librairie Polly fait partie de ces solutions, elle est recommandée par Microsoft pour les cas d'utilisations déjà cités. 
+En intégrant le monde open-source, le framework .NET Core s'est également ouvert à tout un écosystème de solutions tierces qui est venu démultiplier les fonctionnalités offertes. Certaines de ces solutions sont même tellement indispensables qu'elles sont devenues des citoyens de première classe du framework. La librairie Polly fait partie de ces solutions, elle est recommandée par Microsoft pour les cas d'utilisations déjà cités.
 
 Transparent pour le service
 

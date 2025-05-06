@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Dans cette
+ Dans cette
 présentation vidéo, je décris comment les Azure Functions permettent
 de déployer rapidement du code métier réagissant à des événements dans le cloud Azure.
 Je détaille les avantages et les inconvénients de ce type d'architecture.

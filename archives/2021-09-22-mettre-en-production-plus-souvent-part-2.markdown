@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 series: mettre-en-production
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Après un précédent article argumentant pour des mises en production plus fréquentes, afin qu'elles deviennent une tâche rôdée de la vie de tous les jours, voici une deuxième opportunité pour des installations plus sereines&nbsp;: faciliter le plus possible le retour à la version précédente.
+ Après un précédent article argumentant pour des mises en production plus fréquentes, afin qu'elles deviennent une tâche rôdée de la vie de tous les jours, voici une deuxième opportunité pour des installations plus sereines&nbsp;: faciliter le plus possible le retour à la version précédente.
 
 <!--more-->
 

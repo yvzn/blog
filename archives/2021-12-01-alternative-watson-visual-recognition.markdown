@@ -7,7 +7,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Azure computer vision offre une alternative fiable pour la reconnaissance d'objets dans une image, puisque Watson visual recognition est rendu obsolète par IBM.
+ Azure computer vision offre une alternative fiable pour la reconnaissance d'objets dans une image, puisque Watson visual recognition est rendu obsolète par IBM.
 
 <!--more-->
 

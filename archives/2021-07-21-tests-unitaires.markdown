@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Des tests unitiares bien conçus permettent de gagner du temps et de développer plus vite.
+ Des tests unitiares bien conçus permettent de gagner du temps et de développer plus vite.
 
 <!--more-->
 

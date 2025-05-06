@@ -33,7 +33,7 @@ title: Blog
 						}}</a>
 				</h2>
 				<div class="text-gray-600 dark:text-gray-50 mb-4">
-					{% excerpt article %}
+					{% excerpt article.templateContent %}
 				</div>
 				<a href="{{article.url}}"
 					class="text-bluegreen-800 dark:text-white underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">Lire la suite&puncsp;&rarr;</a>
@@ -50,7 +50,7 @@ title: Blog
 </section>
 
 <!-- Code Snippets Section -->
-<section id="code" class="py-24 px-4 dark:bg-skyblue-800">
+<section id="code" class="py-24 px-4 bg-skyblue-50 dark:bg-skyblue-800">
 	<div class="container mx-auto md:w-2/3">
 		<h2 class="text-3xl font-semibold text-center mb-12">Extraits de code</h2>
 		<div class="grid grid-cols-1 gap-8">
@@ -61,7 +61,7 @@ title: Blog
 					<a href="{{snippet.url}}" class="hover:border-b-4 border-b-selectiveyellow">{{snippet.data.title}}</a>
 				</h3>
 				<div class="text-gray-600 dark:text-gray-50 mb-4">
-					{% excerpt snippet %}
+					{% excerpt snippet.templateContent %}
 				</div>
 				<a href="{{snippet.url}}"
 					class="text-bluegreen-800 dark:text-white underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">Lire la suite&puncsp;&rarr;</a>

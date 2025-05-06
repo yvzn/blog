@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> `Start-Process "cmd.exe" "/C ..."`
+ `Start-Process "cmd.exe" "/C ..."`
 permet d'ouvrir une nouvelle console
 dans une fenêtre à part et d'y lancer automatiquement une commande depuis Powershell.
 

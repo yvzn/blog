@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
+
 Je pense que le web a pour vocation d'être accessible au plus grand nombre. Le langage HTML, par exemple, a intégré la compatibilité descendante dès sa conception. Si un ancien navigateur est incapable d'afficher une balise, il l'ignore simplement et essaie d'afficher le reste du document. C'est ce qui permet à la combinaison `<detail>` / `<summary>` de s'afficher de manière acceptable dans un vieux browser.
 
 <!--more-->

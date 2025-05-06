@@ -4,9 +4,26 @@ layout: default
 
 <!-- Title Section -->
 <section class="py-16 px-4 bg-skyblue dark:bg-skyblue-800">
-	<div class="container mx-auto md:w-2/3">
-		<h1 class="text-4xl font-semibold">{{ title }}</h1>
+	<div class="container mx-auto md:w-2xl">
+		<h1 class="text-4xl font-semibold"><a href="{{url}}"
+				class="underline decoration-solid decoration-4 decoration-selectiveyellow underline-offset-4 hover:decoration-selectiveyellow-300 transition-colors">{{ title
+				}}</a></h1>
 	</div>
 </section>
 
-{{ content | safe }}
+{% if '<!--more-->' in content %}
+<section class="post post-excerpt py-16 px-4 bg-bluegreen-50 dark:bg-skyblue-700">
+	<div class="container mx-auto md:w-2xl">
+		<acronym title="En résumé... (Too long; Didn't Read)" class="float-left mr-2">TL;DR</acronym>
+		{% excerpt content %}
+	</div>
+</section>
+{% endif %}
+
+<section class="post post-details py-16 px-4 bg-skyblue-50 dark:bg-skyblue-800">
+	<div class="container mx-auto md:w-2xl">
+		<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-12 pt-0">
+			{% details content %}
+		</article>
+	</div>
+</section>

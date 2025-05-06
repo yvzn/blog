@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Pour créer un nouveau fichier <em>exemple.txt</em> sous bash&nbsp;:
+ Pour créer un nouveau fichier <em>exemple.txt</em> sous bash&nbsp;:
 
 ```bash
 cat <<EOF >exemple.txt

@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> [L'article 4 du RGPD](https://gdpr.algolia.com/fr/gdpr-article-4) définit
+ [L'article 4 du RGPD](https://gdpr.algolia.com/fr/gdpr-article-4) définit
 les données à caractère personnel comme "toute information se rapportant à une _personne
 physique_ identifiée ou identifiable".
 

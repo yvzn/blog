@@ -7,7 +7,7 @@ license: CC-BY-SA-4.0
 tags: code
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
+
 Pour générer un fichier CSV qui peut-être ouvert sans problème dans les versions récentes de Excel, utiliser l'encodage _UTF-16LE_ et le caractère _tabulation_ comme séparateur.
 
 <!--more-->
