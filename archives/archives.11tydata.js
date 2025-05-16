@@ -4,6 +4,9 @@ export default {
 		description: (data) => {
 			return extractDescription(data);
 		},
+		series: (data) => {
+			return extractSeries(data);
+		}
 	}
 }
 
@@ -20,4 +23,14 @@ function extractExerpt(articleBody) {
 		return articleBody.trim();
 	}
 	return articleBody.substring(0, endPosition).trim();
+}
+
+function extractSeries(data) {
+	const tags = data?.tags || [];
+	for(const tag of tags) {
+		if (data?.blog_series?.items?.[tag]) {
+			return tag;
+		}
+	}
+	return null;
 }

@@ -4,7 +4,7 @@ title: "Machine Learning sur du code source (partie 2)"
 date: 2020-03-10T00:00+01:00
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
-series: machine-learning-on-code
+tags: machine-learning-on-code
 ---
 
  Après un premier article où je décris l'approche utilisée pour lancer des algorithmes de machine learning sur son code source et les étapes à réaliser, dans ce second article je présente les étapes de collecte et de première analyse de la donnée présentés dans codelab organisé par Alex Bezzubov et Hugo Mougard lors du DevFest Nantes 2019.

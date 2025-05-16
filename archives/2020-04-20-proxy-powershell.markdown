@@ -4,8 +4,9 @@ title: "Configurer un proxy pour Powershell"
 date: 2020-04-20T00:00+01:00
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
-series: authenticated-proxy
-tags: code
+tags:
+  - authenticated-proxy
+  - code
 ---
 
 

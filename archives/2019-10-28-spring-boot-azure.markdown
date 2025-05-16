@@ -4,7 +4,7 @@ title: "Exécuter une application Spring Boot sur Azure"
 date: 2019-10-28T00:00+01:00
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
-series: spring-boot-azure
+tags: spring-boot-azure
 ---
 
  La ressource

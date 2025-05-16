@@ -104,6 +104,14 @@
 	@apply mb-4;
 }
 
+.post-details ul {
+	@apply list-disc pl-6;
+}
+
 .post.post-excerpt p {
 	@apply text-base/7;
+}
+
+.series ol {
+	@apply list-decimal pl-6;
 }

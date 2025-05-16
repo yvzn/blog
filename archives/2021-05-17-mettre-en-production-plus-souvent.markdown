@@ -4,7 +4,7 @@ title: "Je mets en production plus souvent"
 date: 2021-04-28T00:00+01:00
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
-series: mettre-en-production
+tags: mettre-en-production
 ---
 
  Pour déployer en production de façon plus sereine, la meilleure technique reste de répéter régulièrement l'exercice, encore et encore, jusqu'à ce qu'il devienne naturel, pour chaque membre de l'équipe.

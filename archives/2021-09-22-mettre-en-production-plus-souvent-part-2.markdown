@@ -4,7 +4,7 @@ title: "Je rollback sereinement la production"
 date: 2021-10-20T00:00+01:00
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
-series: mettre-en-production
+tags: mettre-en-production
 ---
 
  Après un précédent article argumentant pour des mises en production plus fréquentes, afin qu'elles deviennent une tâche rôdée de la vie de tous les jours, voici une deuxième opportunité pour des installations plus sereines&nbsp;: faciliter le plus possible le retour à la version précédente.
