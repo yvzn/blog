@@ -1,11 +1,11 @@
 <nav class="series">
-	<h5>Cet article fait partie d'une série</h5>
-	<h3>{{ blog_series.items[series] }}&nbsp;:</h3>
+	<h3>Cet article fait partie d'une série</h3>
+	<p>{{ blog_series.items[series] }}&nbsp;:</p>
 
 	<ol>
 		{%- for post in collections[series] -%}
 		<li>
-			{% if post.url == page.url %}<strong>{{ post.data.title }}</strong>{% else %}<a
+			{% if post.url == page.url %}<strong>{{ post.data.title }}</strong> (cet article){% else %}<a
 				href="{{ post.url }}">{{ post.data.title }}</a> {% endif %}
 		</li>
 		{%- endfor -%}

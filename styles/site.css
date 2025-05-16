@@ -112,6 +112,18 @@
 	@apply text-base/7;
 }
 
+.series h3 {
+	@apply text-2xl font-semibold mb-4 pt-12;
+}
+
 .series ol {
 	@apply list-decimal pl-6;
+}
+
+.series li {
+	@apply text-base/7;
+}
+
+.series li a {
+	@apply underline hover:decoration-selectiveyellow hover:decoration-2;
 }
