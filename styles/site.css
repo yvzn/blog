@@ -112,6 +112,10 @@
 	@apply text-base/7;
 }
 
+.post.post-excerpt pre {
+	@apply mt-4;
+}
+
 .series h3 {
 	@apply text-2xl font-semibold mb-4 pt-12;
 }
