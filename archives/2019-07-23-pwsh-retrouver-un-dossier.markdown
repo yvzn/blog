@@ -4,6 +4,7 @@ title: "Retrouver un sous-dossier avec Powershell"
 date: 2019-07-23T00:00+01:00
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
+tags: code
 ---
 
  `Get-ChildItem -Recurse`

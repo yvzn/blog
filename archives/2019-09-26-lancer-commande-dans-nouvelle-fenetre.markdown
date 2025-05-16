@@ -4,6 +4,7 @@ title: "Lancer une commande dans une nouvelle fenêtre avec Powershell"
 date: 2019-09-26T00:00+01:00
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
+tags: code
 ---
 
  `Start-Process "cmd.exe" "/C ..."`

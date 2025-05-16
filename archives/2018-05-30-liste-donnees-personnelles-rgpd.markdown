@@ -4,6 +4,7 @@ title: "Liste des données personnelles couvertes par le RGPD"
 date: 2018-05-30T00:00+01:00
 author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
+tags: article
 ---
 
  [L'article 4 du RGPD](https://gdpr.algolia.com/fr/gdpr-article-4) définit

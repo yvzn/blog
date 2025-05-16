@@ -14,7 +14,7 @@ title: Tous les articles
 <section id="articles" class="py-16 px-4 bg-bluegreen-50 dark:bg-skyblue-700">
 	<div class="container mx-auto md:w-4xl">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-			{%- for article in collections.featuredArticles -%}
+			{%- for article in collections.article reversed -%}
 			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-8">
 				<h2 class="text-2xl font-semibold mb-4">
 					<a href="{{article.url}}" class="hover:border-b-4 border-b-selectiveyellow">{{ article.data.title
