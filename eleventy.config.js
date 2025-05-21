@@ -1,4 +1,7 @@
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default function (eleventyConfig) {
+
+	// -- Folder structure --
 	eleventyConfig.addPassthroughCopy({ './public/': '.' });
 
 	eleventyConfig.addWatchTarget('./styles/')
@@ -8,6 +11,7 @@ export default function (eleventyConfig) {
 		key: "md",
 	});
 
+	// -- Custom filters and shortcodes --
 	eleventyConfig.addCollection("featuredArticles", getFeaturedArticles);
 
 	eleventyConfig.addShortcode("excerpt", extractExcerpt);
