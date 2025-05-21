@@ -19,7 +19,7 @@ jobs:
   - task: ArchiveFiles@2
     displayName: "Archive files"
     inputs:
-      rootFolderOrFile: "$(System.DefaultWorkingDirectory)/_dist"
+      rootFolderOrFile: "$(System.DefaultWorkingDirectory)/_site"
       includeRootFolder: false
       archiveFile: "$(System.ArtifactStagingDirectory)/build$(Build.BuildId).zip"
   - task: PublishBuildArtifacts@1
