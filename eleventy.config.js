@@ -1,3 +1,5 @@
+import { HtmlBasePlugin } from "@11ty/eleventy";
+
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default function (eleventyConfig) {
 
@@ -11,6 +13,9 @@ export default function (eleventyConfig) {
 		key: "md",
 	});
 
+	// -- Plugins --
+	eleventyConfig.addPlugin(HtmlBasePlugin);
+
 	// -- Custom filters and shortcodes --
 	eleventyConfig.addCollection("featuredArticles", getFeaturedArticles);
 
@@ -21,6 +26,10 @@ export default function (eleventyConfig) {
 		return array.slice(0, limit);
 	});
 	eleventyConfig.addFilter("stripMarkup", stripMarkup);
+}
+
+export const config = {
+	pathPrefix: '/blog_v2/',
 }
 
 function getFeaturedArticles(collectionsApi) {
