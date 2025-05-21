@@ -1,8 +1,10 @@
 variables:
-- group: "production"
+- group: "production_v2"
 
 trigger:
-- main
+  branches:
+    include:
+    - blog_v2
 
 pool:
   vmImage: ubuntu-latest
@@ -10,38 +12,44 @@ pool:
 jobs:
 - job: CI
   steps:
-  - task: UseRubyVersion@0
+  - powershell: |
+      npm ci
+      npm run build --if-present
+    displayName: "Install and build"
+  - task: ArchiveFiles@2
+    displayName: "Archive files"
     inputs:
-      versionSpec: '>= 2.5'
-
-  - script: |
-      gem install bundler
-      bundle install --retry=3 --jobs=4
-    displayName: 'bundle install'
-
-  - script: jekyll build
-    displayName: 'jekyll build'
-
-  - task: PublishPipelineArtifact@1
+      rootFolderOrFile: "$(System.DefaultWorkingDirectory)/_dist"
+      includeRootFolder: false
+      archiveFile: "$(System.ArtifactStagingDirectory)/build$(Build.BuildId).zip"
+  - task: PublishBuildArtifacts@1
     inputs:
-      targetPath: '_site'
-      publishLocation: 'pipeline'
-      artifact: 'site'
+      PathtoPublish: '$(System.ArtifactStagingDirectory)/build$(Build.BuildId).zip'
+      artifactName: 'site'
 
 - deployment: CD
   dependsOn: CI
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/v2'))
   environment: 'Azure'
   strategy:
     runOnce:
       deploy:
         steps:
-        - task: AzureCLI@2
-          displayName: 'upload files to Azure'
+        - task: ExtractFiles@1
           inputs:
-            azureSubscription: '$(azureSubscription)'
-            scriptType: 'pscore'
-            scriptLocation: 'inlineScript'
-            inlineScript: |
-              az storage blob delete-batch --account-key $(storageAccountKey) --account-name $(storageAccountName) --source `$web --delete-snapshots include
-              az storage blob upload-batch --account-key $(storageAccountKey) --account-name $(storageAccountName) --destination `$web --source $(Pipeline.Workspace)/site
+            archiveFilePatterns: '$(Pipeline.Workspace)/site/*.zip'
+            destinationFolder: '$(Pipeline.Workspace)/wip'
+            cleanDestinationFolder: true
+            overwriteExistingFiles: true
+        - powershell: |
+            Set-Location $(Pipeline.Workspace)/wip
+            Rename-Item -Path .htaccess.sample -NewName .htaccess
+          displayName: "Prepare files"
+        - task: CopyFilesOverSSH@0
+          inputs:
+            sshEndpoint: '$(sshEndpoint)'
+            sourceFolder: '$(Pipeline.Workspace)/wip'
+            contents: '**'
+            targetFolder: '$(sshTargetFolder)'
+            readyTimeout: '20000'
+            overwrite: true
