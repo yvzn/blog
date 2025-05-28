@@ -29,7 +29,7 @@ export default function (eleventyConfig) {
 }
 
 export const config = {
-	pathPrefix: '/blog_v2/',
+	pathPrefix: '/blog/',
 }
 
 function getFeaturedArticles(collectionsApi) {
