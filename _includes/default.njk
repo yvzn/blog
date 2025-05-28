@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ blog.lang }}" prefix="og: https://ogp.me/ns#" class="scroll-smooth scroll-py-16">
+
+<head>
+	{% include "partials/head.njk" %}
+</head>
+
+<body class="bg-white text-prussianblue dark:bg-bluegreen-800 dark:text-white">
+	{% include "partials/header.njk" %}
+
+	{{ content | safe }}
+
+	{% include "partials/footer.njk" %}
+
+	{% include "partials/scripting.njk" %}
+</body>
+
+</html>

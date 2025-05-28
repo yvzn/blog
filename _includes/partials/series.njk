@@ -1,0 +1,16 @@
+<nav class="series">
+	<h3>Cet article fait partie d'une série</h3>
+	<p>{{ blog_series.items[series] }}&nbsp;:</p>
+
+	<ol>
+		{%- for post in collections[series] -%}
+		<li>
+			{% if post.url == page.url %}<strong>{{ post.data.title }}</strong> (cet article){% else %}<a
+				href="{{ post.url }}">{{ post.data.title }}</a> {% endif %}
+		</li>
+		{%- endfor -%}
+	</ol>
+	{% if collections[series].size == 1 %}
+	<p>Plus d'articles à venir...</p>
+	{% endif %}
+</nav>

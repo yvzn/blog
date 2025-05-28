@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<!-- Title Section -->
+<section class="py-16 px-4 bg-skyblue dark:bg-skyblue-800">
+	<div class="container mx-auto md:w-2xl">
+		<h1 class="text-4xl font-semibold"><a href="{{url}}"
+				class="underline decoration-solid decoration-4 decoration-selectiveyellow underline-offset-4 hover:decoration-selectiveyellow-300 transition-colors">{{
+				title
+				}}</a></h1>
+	</div>
+</section>
+
+{% if '<!--more-->' in content %}
+<section class="post post-excerpt py-8 px-4 bg-bluegreen-50 dark:bg-skyblue-700">
+	<div class="container mx-auto md:w-2xl">
+		<acronym title="En résumé... (Too long; Didn't Read)" class="float-left mr-2">TL;DR</acronym>
+		{% excerpt content %}
+	</div>
+</section>
+{% endif %}
+
+<section class="post post-details pt-12 pb-16 px-4 bg-skyblue-50 dark:bg-skyblue-800">
+	<div class="container mx-auto md:w-2xl">
+		<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-16 pb-12">
+			{% details content %}
+		</article>
+		<footer class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-16 mt-8">
+			Pour toute remarque ou discussion,<br />vous pouvez
+			<a href="https://github.com/yvzn/blog/issues"
+				class="underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">ouvrir une
+				issue sur GitHub</a>&nbsp;🙂👍.
+		</footer>
+	</div>
+</section>

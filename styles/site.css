@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	/* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
+	/* https://www.tints.dev/skyblue/8ecae6 */
+
+	--color-skyblue-50: #f2f9fc;
+	--color-skyblue-100: #eaf5fa;
+	--color-skyblue-200: #d1eaf5;
+	--color-skyblue-300: #bce0f0;
+	--color-skyblue-400: #a3d4eb;
+	--color-skyblue-500: #8ecae6;
+	--color-skyblue-600: #50add8;
+	--color-skyblue-700: #298ab8;
+	--color-skyblue-800: #1b5b79;
+	--color-skyblue-900: #0e2f3f;
+	--color-skyblue-950: #06161d;
+	--color-skyblue: var(--color-skyblue-500);
+
+	--color-bluegreen-50: #e5f6fa;
+	--color-bluegreen-100: #cfeff7;
+	--color-bluegreen-200: #9bdded;
+	--color-bluegreen-300: #6ccde5;
+	--color-bluegreen-400: #3cbddd;
+	--color-bluegreen-500: #219ebc;
+	--color-bluegreen-600: #1b7f98;
+	--color-bluegreen-700: #145e71;
+	--color-bluegreen-800: #0d3e4a;
+	--color-bluegreen-900: #072127;
+	--color-bluegreen-950: #030e11;
+	--color-bluegreen: var(--color-bluegreen-500);
+
+	--color-prussianblue-50: #d2effe;
+	--color-prussianblue-100: #abe1fd;
+	--color-prussianblue-200: #56c4fa;
+	--color-prussianblue-300: #07a4f3;
+	--color-prussianblue-400: #04689a;
+	--color-prussianblue-500: #023047;
+	--color-prussianblue-600: #022537;
+	--color-prussianblue-700: #011e2d;
+	--color-prussianblue-800: #01141e;
+	--color-prussianblue-900: #000a0f;
+	--color-prussianblue-950: #000305;
+	--color-prussianblue: var(--color-prussianblue-500);
+
+	--color-selectiveyellow-50: #fff8e5;
+	--color-selectiveyellow-100: #fff1cc;
+	--color-selectiveyellow-200: #ffe299;
+	--color-selectiveyellow-300: #ffd466;
+	--color-selectiveyellow-400: #ffc533;
+	--color-selectiveyellow-500: #ffb703;
+	--color-selectiveyellow-600: #cc9200;
+	--color-selectiveyellow-700: #996e00;
+	--color-selectiveyellow-800: #664900;
+	--color-selectiveyellow-900: #332500;
+	--color-selectiveyellow-950: #191200;
+	--color-selectiveyellow: var(--color-selectiveyellow-500);
+
+	--color-utorange-50: #fff3e5;
+	--color-utorange-100: #ffe7cc;
+	--color-utorange-200: #ffcf99;
+	--color-utorange-300: #ffb866;
+	--color-utorange-400: #ff9d2e;
+	--color-utorange-500: #fb8500;
+	--color-utorange-600: #c76a00;
+	--color-utorange-700: #995200;
+	--color-utorange-800: #663600;
+	--color-utorange-900: #331b00;
+	--color-utorange-950: #190e00;
+	--color-utorange: var(--color-utorange-500);
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+.post pre {
+	@apply bg-prussianblue text-white p-4 rounded-lg overflow-x-auto;
+}
+
+.post kbd {
+	@apply border-1 border-solid rounded-md py-1 px-2 bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-700 shadow-sm;
+}
+
+.post-details h1 {
+	 @apply text-3xl font-semibold mb-4 pt-12;
+}
+
+.post-details h1:first-child {
+	@apply pt-0;
+}
+
+.post-details h2 {
+	@apply text-2xl font-semibold mb-4 pt-12;
+}
+
+.post-details p {
+	@apply text-base/7 mb-4;
+}
+
+.post-details pre, .post-details ul {
+	@apply mb-4;
+}
+
+.post-details ul {
+	@apply list-disc pl-6;
+}
+
+.post.post-excerpt p {
+	@apply text-base/7;
+}
+
+.post.post-excerpt pre {
+	@apply mt-4;
+}
+
+.post-details a, .post-excerpt a {
+	@apply underline hover:decoration-selectiveyellow hover:decoration-2;
+}
+
+.series h3 {
+	@apply text-2xl font-semibold mb-4 pt-12;
+}
+
+.series ol {
+	@apply list-decimal pl-6;
+}
+
+.series li {
+	@apply text-base/7;
+}
+

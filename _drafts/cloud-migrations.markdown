@@ -4,14 +4,14 @@
 Cela fait X ans que <acronym title="Amazon Web Services">AWS</acronym> a été lancé. A l'image de la plateforme de services d'Amazon, la migration des applications web vers les clouds publics fait partie de ces révolutions silencieuses qui changent le paysage de l'informatique en profondeur. Et si certaines promesses du début se sont au fil du temps transformées en attentes différentes, à mesure que les grandes compagnies et les process d'entreprise sont entrés dans la danse, le rythme s'accèlère : les trois derniers projets sur lesquels je suis intervenu ont tous les trois migré vers le cloud. Avec des approches et difficultés diverses.
 
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym>
+
 Les avantages au cloud, ceux qu'on peut avancer pour convaincre, sont la haute disponibilité de l'infrastructure, la maintenance simplifiée et l'elasticité automatique. Il ne faut cependant pas perdre de vue que ces infrastructures sont souvent publiques, que leur coût final est difficile à évaluer et que leur mise en oeuvre implique une perte de contrôle sur des éléments clés du SI.
 
 <!--more-->
 
 # Pourquoi migrer ?
 
-L'argument souvent entendu en faveur d'une migration vers le cloud se résume plus ou moins à une réduction des coûts d'exploitation, par rapport à un datacenter physique ou à un abonnement chez un hébergeur classique. C'est un argument tout à fait valide, mais il faut le prendre avec des pincettes : certains coûts sont (volontairement ?) cachés par les fournisseurs - et surtout ce n'est pas le plus important. 
+L'argument souvent entendu en faveur d'une migration vers le cloud se résume plus ou moins à une réduction des coûts d'exploitation, par rapport à un datacenter physique ou à un abonnement chez un hébergeur classique. C'est un argument tout à fait valide, mais il faut le prendre avec des pincettes : certains coûts sont (volontairement ?) cachés par les fournisseurs - et surtout ce n'est pas le plus important.
 
 ## Les avantages
 
@@ -25,11 +25,11 @@ Le troisième avantage est __l'elasticité__ du cloud, qui permet d'augmenter ou
 
 Enfin le dernier gain est une __protection contre les attaques externes__ les plus communes : denial of service, intrusion, ... Les fournisseurs n'ont en effet aucun intérêt à voir leur infrastructure s'effondrer ou être victime d'une attaque. Ils fournissent donc tous une forme de protection de premier niveau. Il faut cependant remarquer que cette protection reste relative, qu'elle ne prémunit pas contre les attaques internes au réseau (provenant par exemple d'un autre utilisateur du même cloud) et qu'elle ne permet donc pas de faire l'économie des bonnes pratiques de sécurité indispensable à toute applicaton web.
 
-## Les points d'attention 
+## Les points d'attention
 
 C'est le premier point qu'il faut avoir à l'esprit lors d'une migration sur le cloud : __ces infrastructures sont publiques__ par défaut, ce qui signifie qu'y cohabitent applications d'entreprise, projets de hobbyistes et, potentiellement, programmes malveillants. Il est relativement aisé pour un attaquant de _deviner_ les identifiants d'un service et d'y accéder s'il est mal ou pas protégé. Et s'il est possible d'isoler logiquement ou physiquement ses ressources, le coût de ces réseaux privés est loin d'être neutre. Ces aspects sont donc bien à prendre en compte lors de la conception de la migration.
 
-Les __coûts effectifs__ sont le deuxième élément à ne pas négliger. La manière dont ils sont présentés par les fournisseurs peuvent parfois faire miroiter, à tort, des économises substancielles sur le coût d'exploitation. Entre les offres initialement gratuites, qui deviennent rapidement onéreuses dès qu'on dépasse une certaine activité ou qu'on veut accéder à certaines fonctionnalités, celles à la politique tarifaire obscure utilisant par exemple des unités peu communes ou à la définition ambigüe, et enfin les services au prix prohibitif (tels que les réseaux privés virtuels) qu'il faudra, peut-être, malgré tout mettre en oeuvre... en réalité, le coût d'exploitation final est souvent difficile à prédire dès le début du projet. 
+Les __coûts effectifs__ sont le deuxième élément à ne pas négliger. La manière dont ils sont présentés par les fournisseurs peuvent parfois faire miroiter, à tort, des économises substancielles sur le coût d'exploitation. Entre les offres initialement gratuites, qui deviennent rapidement onéreuses dès qu'on dépasse une certaine activité ou qu'on veut accéder à certaines fonctionnalités, celles à la politique tarifaire obscure utilisant par exemple des unités peu communes ou à la définition ambigüe, et enfin les services au prix prohibitif (tels que les réseaux privés virtuels) qu'il faudra, peut-être, malgré tout mettre en oeuvre... en réalité, le coût d'exploitation final est souvent difficile à prédire dès le début du projet.
 
 Troisième point enfin, le fait de déléguer la mise en oeuvre de son infrastructure se fait forcément au prix d'une certaine __perte de contrôle__ plus ou moins importante sur cette infrastructure : plus d'accès physique au serveurs, systèmes d'exploitation gérés par le fournisseur, etc. Ainsi, suivant les contraintes du système d'information, suivant également les contraintes réglementaires applicables, il ne sera pas forcément possible ou judicieux de migrer tel ou tel applicatif vers tel ou tel service.
 
@@ -59,7 +59,7 @@ Inconvénients
 - on ne bénéficie pas des améliorations du cloud
 - tout ce dont on a besoin est-il disponible / utilisable
 
-# Re-écriture 
+# Re-écriture
 
 Application Cloud Native
 

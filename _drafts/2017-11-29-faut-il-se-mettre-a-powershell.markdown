@@ -6,7 +6,7 @@ author: Yvan Razafindramanana
 license: CC-BY-SA-4.0
 ---
 
-<acronym title="En résumé... (Too long; Didn't Read)">TL;DR</acronym> Oui, si vous voulez travailler plus rapidement et n'avez pas la possibilité (ou l'envie) d'installer Windows 10 ou un émulateur bash, ou bien si vous administrez des machines Windows plus "anciennes". Ou bien si vous aimez pouvoir vous en sortir un minimum dans n'importe quelle situation. Non si vous connaissez déjà bash et avez déjà un bash disponible.
+ Oui, si vous voulez travailler plus rapidement et n'avez pas la possibilité (ou l'envie) d'installer Windows 10 ou un émulateur bash, ou bien si vous administrez des machines Windows plus "anciennes". Ou bien si vous aimez pouvoir vous en sortir un minimum dans n'importe quelle situation. Non si vous connaissez déjà bash et avez déjà un bash disponible.
 
 <!--more-->
 
@@ -20,7 +20,7 @@ L'inconvénient c'est qu'il faut apprendre toute une syntaxe, dont la philosophi
 
 Je ne dis pas qu'une méthode est meilleure que l'autre, mais il faut un peu changer sa logique et apprendre à faire différemment.
 
-La question que je me suis alors posée est&nbsp;: est-ce que ça vaut le coup/coût&nbsp;? Est-ce que le bénéfice apporté par l'outil mérite le temps à apprendre son fonctionnement&nbsp;? 
+La question que je me suis alors posée est&nbsp;: est-ce que ça vaut le coup/coût&nbsp;? Est-ce que le bénéfice apporté par l'outil mérite le temps à apprendre son fonctionnement&nbsp;?
 
 Surtout, si on est déjà suffisamment productif avec bash pour ne plus avoir à chercher systématiquement comment faire sur Stackoverflow, au quotidien il y a de grandes chances qu'un bash soit déjà installé dans son environnement. Y compris sous Windows. Par exemple si on utilise Git, il est installé par défaut avec Git bash. Dans le cas contraire, on peut toujours installer un émulateur comme MiniGW ou Cygwin.
 
