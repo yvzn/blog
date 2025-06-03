@@ -16,9 +16,9 @@ title: Tous les extraits de code
 		<div class="grid grid-cols-1 gap-8">
 			{%- for snippet in collections.code reversed -%}
 			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-8">
-				<h3 class="text-2xl font-semibold mb-4">
+				<h2 class="text-2xl font-semibold mb-4">
 					<a href="{{snippet.url}}" class="hover:border-b-4 border-b-selectiveyellow">{{snippet.data.title}}</a>
-				</h3>
+				</h2>
 				<div class="text-gray-600 dark:text-gray-50 mb-4">
 					{% excerpt snippet.templateContent %}
 				</div>

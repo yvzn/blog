@@ -76,6 +76,11 @@
 	navigation: auto;
 }
 
+section :where(h1) {
+	/* https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements#specifying_a_uniform_font_size_for_h1 */
+	margin-block: 0;
+}
+
 .post pre {
 	@apply bg-prussianblue text-white p-4 rounded-lg overflow-x-auto;
 }
@@ -85,7 +90,7 @@
 }
 
 .post-details h1 {
-	 @apply text-3xl font-semibold mb-4 pt-12;
+	@apply text-3xl font-semibold mb-4 pt-12;
 }
 
 .post-details h1:first-child {
@@ -100,7 +105,8 @@
 	@apply text-base/7 mb-4;
 }
 
-.post-details pre, .post-details ul {
+.post-details pre,
+.post-details ul {
 	@apply mb-4;
 }
 
@@ -116,7 +122,8 @@
 	@apply mt-4;
 }
 
-.post-details a, .post-excerpt a {
+.post-details a,
+.post-excerpt a {
 	@apply underline hover:decoration-selectiveyellow hover:decoration-2;
 }
 
@@ -131,4 +138,3 @@
 .series li {
 	@apply text-base/7;
 }
-

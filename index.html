@@ -28,10 +28,10 @@ title: Blog
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 			{%- for article in collections.featuredArticles -%}
 			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-8">
-				<h2 class="text-2xl font-semibold mb-4">
+				<h3 class="text-2xl font-semibold mb-4">
 					<a href="{{article.url}}" class="hover:border-b-4 border-b-selectiveyellow">{{ article.data.title
 						}}</a>
-				</h2>
+				</h3>
 				<div class="text-gray-600 dark:text-gray-50 mb-4">
 					{% excerpt article.templateContent %}
 				</div>
