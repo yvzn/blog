@@ -1,4 +1,4 @@
-/* Dark mode toggle script */
+/* --- Dark mode toggle script  --- */
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const sunIcon = document.querySelector('.sun-icon');
 const moonIcon = document.querySelector('.moon-icon');
@@ -19,20 +19,37 @@ if (window.matchMedia) {
 	darkModeMediaQuery.addEventListener('change', toggleDarkMode);
 }
 
+/* --- Mobile menu toggle script --- */
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 
+function toggleMenuHidden(forceHiddenState) {
+	let isHidden = forceHiddenState;
+	if (forceHiddenState === undefined) {
+		// If no force parameter is provided, toggle the hidden state
+		isHidden = !mobileMenu.hidden;
+	}
+
+	mobileMenu.classList.toggle('hidden', isHidden);
+	mobileMenu.hidden = isHidden;
+	if (isHidden) {
+		mobileMenuButton.setAttribute('aria-expanded', 'false');
+	} else {
+		mobileMenuButton.setAttribute('aria-expanded', 'true');
+	}
+}
+
 mobileMenuButton.addEventListener('click', () => {
-	mobileMenu.classList.toggle('hidden');
+	toggleMenuHidden();
 });
 
 mobileMenu.addEventListener('click', () => {
-	mobileMenu.classList.toggle('hidden');
+	toggleMenuHidden(true);
 });
 
 if (window.matchMedia) {
 	const mdBreakpointMediaQuery = window.matchMedia('(width >= 48rem)');
 	mdBreakpointMediaQuery.addEventListener('change', () => {
-		mobileMenu.classList.add('hidden');
+		toggleMenuHidden(true);
 	});
 }

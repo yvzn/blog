@@ -10,14 +10,14 @@ title: Blog
 		<p class="text-xl mb-12">
 			{{ blog.description }}
 		</p>
-		<a href="#articles"
-			class="px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-sm">
-			Lire les articles
-		</a>
-		<a href="#code"
-			class="ml-4 px-6 py-3 border-1 border-prussianblue hover:bg-skyblue-400 dark:text-white dark:border-bluegreen-100 dark:hover:bg-skyblue-700 transition-colors text-prussianblue rounded-sm">
-			Extraits de code
-		</a>
+		<p class="flex flex-wrap md:block md:flex-none">
+			<a href="#articles"
+				class="mr-4 mb-4 px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-sm whitespace-nowrap">Lire
+				les articles</a>
+			<a href="#code"
+				class="px-6 py-3 border-1 border-prussianblue hover:bg-skyblue-400 dark:text-white dark:border-bluegreen-100 dark:hover:bg-skyblue-700 transition-colors text-prussianblue rounded-sm whitespace-nowrap">Extraits
+				de code</a>
+		</p>
 	</div>
 </section>
 
@@ -36,7 +36,8 @@ title: Blog
 					{% excerpt article.templateContent %}
 				</div>
 				<a href="{{article.url}}"
-					class="text-bluegreen-800 dark:text-white underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">Lire la suite&puncsp;&rarr;</a>
+					class="text-bluegreen-800 dark:text-white underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">Lire
+					la suite&puncsp;&rarr;</a>
 			</article>
 			{%- endfor -%}
 		</div>
@@ -58,13 +59,15 @@ title: Blog
 			{%- for snippet in snippets -%}
 			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-8">
 				<h3 class="text-2xl font-semibold mb-4">
-					<a href="{{snippet.url}}" class="hover:border-b-4 border-b-selectiveyellow">{{snippet.data.title}}</a>
+					<a href="{{snippet.url}}"
+						class="hover:border-b-4 border-b-selectiveyellow">{{snippet.data.title}}</a>
 				</h3>
 				<div class="text-gray-600 dark:text-gray-50 mb-4">
 					{% excerpt snippet.templateContent %}
 				</div>
 				<a href="{{snippet.url}}"
-					class="text-bluegreen-800 dark:text-white underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">Lire la suite&puncsp;&rarr;</a>
+					class="text-bluegreen-800 dark:text-white underline underline-offset-4 hover:decoration-selectiveyellow hover:decoration-2">Lire
+					la suite&puncsp;&rarr;</a>
 			</article>
 			{%- endfor -%}
 		</div>
