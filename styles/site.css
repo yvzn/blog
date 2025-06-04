@@ -3,6 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+	--breakpoint-xs: 25rem;
+
 	/* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
 	/* https://www.tints.dev/skyblue/8ecae6 */
 

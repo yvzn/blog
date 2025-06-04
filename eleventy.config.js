@@ -68,6 +68,8 @@ function stripMarkup(content) {
 	result = result.replace(/<[^>]+>/g, "");
 	// Replace markdown links with plain text
 	result = result.replace(/\[([^\]]+)\]\([^\)]+\)/g, "$1");
+	// Replace markdown formatting (bold, italic, etc.) with plain text
+ 	result = result.replace(/([\*_]{1,2})(.*?)\1/g, "$2"); // Bold
 	// Remove line breaks
 	result = result.replace(/(\r\n|\n|\r)/gm, " ");
 	// Remove extra spaces

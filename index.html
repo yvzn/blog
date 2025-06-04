@@ -10,7 +10,7 @@ title: Blog
 		<p class="text-xl mb-12">
 			{{ blog.description }}
 		</p>
-		<p class="flex flex-wrap md:block md:flex-none">
+		<p class="flex flex-wrap xs:block xs:flex-none">
 			<a href="#articles"
 				class="mr-4 mb-4 px-6 py-3 bg-selectiveyellow hover:bg-selectiveyellow-300 transition-colors text-prussianblue rounded-sm whitespace-nowrap">Lire
 				les articles</a>
@@ -55,7 +55,7 @@ title: Blog
 	<div class="container mx-auto md:w-2xl">
 		<h2 class="text-3xl font-semibold text-center mb-12">Extraits de code</h2>
 		<div class="grid grid-cols-1 gap-8">
-			{% assign snippets = collections.code | limit:4 %}
+			{% assign snippets = collections.code | reverse | limit:4 %}
 			{%- for snippet in snippets -%}
 			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-8">
 				<h3 class="text-2xl font-semibold mb-4">
