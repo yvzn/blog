@@ -22,12 +22,12 @@ title: Blog
 </section>
 
 <!-- Featured Blog Articles Section -->
-<section id="articles" class="py-16 lg:py-24 px-4 bg-bluegreen-50 dark:bg-skyblue-700">
+<section id="articles" class="py-16 lg:py-24 px-4 bg-bluegreen-50 dark:bg-skyblue-750">
 	<div class="container mx-auto md:w-4xl">
 		<h2 class="text-3xl font-semibold text-center mb-12">Articles</h2>
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 			{%- for article in collections.featuredArticles -%}
-			<article class="bg-white dark:bg-skyblue-800 rounded-sm shadow-md p-8">
+			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-8">
 				<h3 class="text-2xl font-semibold mb-4">
 					<a href="{{article.url}}" class="hover:border-b-4 border-b-selectiveyellow">{{ article.data.title
 						}}</a>
@@ -57,7 +57,7 @@ title: Blog
 		<div class="grid grid-cols-1 gap-8">
 			{% assign snippets = collections.code | reverse | limit:4 %}
 			{%- for snippet in snippets -%}
-			<article class="bg-white dark:bg-skyblue-700 rounded-sm shadow-md p-8">
+			<article class="bg-white dark:bg-skyblue-750 rounded-sm shadow-md p-8">
 				<h3 class="text-2xl font-semibold mb-4">
 					<a href="{{snippet.url}}"
 						class="hover:border-b-4 border-b-selectiveyellow">{{snippet.data.title}}</a>

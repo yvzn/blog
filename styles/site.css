@@ -9,17 +9,18 @@
 	/* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
 	/* https://www.tints.dev/skyblue/8ecae6 */
 
-	--color-skyblue-50: #f2f9fc;
-	--color-skyblue-100: #eaf5fa;
-	--color-skyblue-200: #d1eaf5;
-	--color-skyblue-300: #bce0f0;
-	--color-skyblue-400: #a3d4eb;
-	--color-skyblue-500: #8ecae6;
-	--color-skyblue-600: #50add8;
-	--color-skyblue-700: #298ab8;
-	--color-skyblue-800: #1b5b79;
-	--color-skyblue-900: #0e2f3f;
-	--color-skyblue-950: #06161d;
+	--color-skyblue-50: hsl(198 62.5% 96.9%);
+	--color-skyblue-100: hsl(198.7 61.5% 94.9%);
+	--color-skyblue-200: hsl(198.3 64.3% 89%);
+	--color-skyblue-300: hsl(198.5 63.4% 83.9%);
+	--color-skyblue-400: hsl(199.2 64.3% 78%);
+	--color-skyblue-500: hsl(199.1 63.8% 72.9%);
+	--color-skyblue-600: hsl(199 63.6% 58%);
+	--color-skyblue-700: hsl(199.3 63.6% 44.1%);
+	--color-skyblue-750: hsl(199, 64%, 36%);
+	--color-skyblue-800: hsl(199.1 63.5% 29%);
+	--color-skyblue-900: hsl(199.6 63.6% 15.1%);
+	--color-skyblue-950: hsl(198.3 65.7% 6.9%);
 	--color-skyblue: var(--color-skyblue-500);
 
 	--color-bluegreen-50: #e5f6fa;
