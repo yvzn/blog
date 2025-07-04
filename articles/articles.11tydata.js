@@ -5,9 +5,6 @@ export default {
 	eleventyComputed: {
 		description: (data) => {
 			return extractDescription(data);
-		},
-		series: (data) => {
-			return extractSeries(data);
 		}
 	}
 }
@@ -17,14 +14,4 @@ function extractDescription(data) {
 
 	const templateContent = data.page.rawInput;
 	return extractExcerpt(templateContent);
-}
-
-function extractSeries(data) {
-	const tags = data?.tags || [];
-	for(const tag of tags) {
-		if (data?.blog_series?.items?.[tag]) {
-			return tag;
-		}
-	}
-	return null;
 }
